@@ -1,0 +1,12 @@
+version: "3.9"
+name: beneficiaries-front-prod
+services:
+  app:
+    build: .
+    ports:
+      - "3001:80"
+
+networks:
+  default:
+    name: beneficiaries-network
+    external: true
